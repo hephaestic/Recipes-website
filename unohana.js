@@ -1,7 +1,7 @@
 window.RECIPES = window.RECIPES || {};
 
-window.RECIPES["unohana-kirazu"] = {
-  id: "unohana-kirazu",
+window.RECIPES["unohana"] = {
+  id: "unohana",
 
   title: "Unohana (Kirazu)",
   description:
