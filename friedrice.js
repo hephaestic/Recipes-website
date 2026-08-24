@@ -1,7 +1,7 @@
 window.RECIPES = window.RECIPES || {};
 
-window.RECIPES["okara-fried-rice"] = {
-  id: "okara-fried-rice",
+window.RECIPES["friedrice"] = {
+  id: "friedrice",
 
   title: "Okara Fried Rice",
   description:
