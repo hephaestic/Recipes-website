@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Recipe details.">
+
+  <title>Recipe · Recipe Collection</title>
+
+  <link rel="stylesheet" href="site.css">
+  <script src="registry.js"></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body data-page="recipe">
+  <header class="site-header recipe-site-header">
+    <div class="page-header-inner">
+      <a class="back-link" href="index.html">← All recipes</a>
+      <p class="eyebrow">Recipe Collection</p>
+    </div>
+  </header>
+
+  <main class="page recipe-page">
+    <section id="recipe-loading" class="recipe-message" aria-live="polite">
+      <p>Loading recipe…</p>
+    </section>
+
+    <section id="recipe-missing" class="recipe-message" hidden>
+      <h1>Recipe not available</h1>
+      <p id="recipe-missing-message">
+        This recipe could not be found or has not been added yet.
+      </p>
+      <a class="primary-link" href="index.html">Browse available recipes</a>
+    </section>
+
+    <article id="recipe-detail" hidden>
+      <header class="recipe-header">
+        <p class="recipe-meta" id="recipe-meta"></p>
+        <h1 id="recipe-title"></h1>
+        <p class="recipe-description recipe-description-large" id="recipe-description"></p>
+
+        <div class="recipe-tags" id="recipe-tags" aria-label="Recipe tags"></div>
+      </header>
+
+      <section class="recipe-controls" aria-label="Recipe controls">
+        <div class="servings-control">
+          <span class="control-label">Servings</span>
+
+          <div class="servings-stepper">
+            <button
+              id="servings-decrease"
+              type="button"
+              aria-label="Decrease servings"
+            >
+              −
+            </button>
+
+            <output id="servings-count" aria-live="polite"></output>
+
+            <button
+              id="servings-increase"
+              type="button"
+              aria-label="Increase servings"
+            >
+              +
+            </button>
+          </div>
+        </div>
+
+        <div class="units-control">
+          <span class="control-label">Units</span>
+
+          <div class="unit-toggle" role="group" aria-label="Measurement units">
+            <button
+              id="units-us"
+              type="button"
+              data-unit="us"
+              aria-pressed="true"
+            >
+              US
+            </button>
+
+            <button
+              id="units-metric"
+              type="button"
+              data-unit="metric"
+              aria-pressed="false"
+            >
+              Metric
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="recipe-body">
+        <section c
