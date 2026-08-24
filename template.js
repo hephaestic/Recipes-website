@@ -54,7 +54,7 @@ window.RECIPES["replace-with-recipe-id"] = {
   ],
 
   notes: "Optional notes.",
-
+}
 /*
    TAG group suggestions
 
