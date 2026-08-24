@@ -1,6 +1,6 @@
 window.RECIPES = window.RECIPES || [];
 
-window.RECIPES[gyoza]=({
+window.RECIPES[gyoza] = {
   id: "gyoza",
   tag: "Fusion · Okara · Serves 4",
   collection: "okara",
@@ -60,4 +60,4 @@ window.RECIPES[gyoza]=({
   ],
 
   notes: "Salting and squeezing the cabbage is essential to prevent soggy dumplings. Freeze uncooked dumplings in a single layer, then bag them; cook straight from frozen."
-});
+};
