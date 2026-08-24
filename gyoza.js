@@ -1,7 +1,7 @@
 window.RECIPES = window.RECIPES || [];
 
-window.RECIPES.push({
-  id: "okara-pork-dumpling-gyoza",
+window.RECIPES[gyoza]=({
+  id: "gyoza",
   tag: "Fusion · Okara · Serves 4",
   collection: "okara",
   title: "Okara Pork Dumplings (Gyoza)",
