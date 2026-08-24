@@ -1,6 +1,6 @@
 window.RECIPES = window.RECIPES || [];
 
-window.RECIPES.push({
+window.RECIPES["korroke"] = {
   id: "korroke",
   tag: "Japan · Okara · Serves 4",
   collection: "okara",
