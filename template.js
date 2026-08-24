@@ -53,8 +53,8 @@ window.RECIPES["replace-with-recipe-id"] = {
     },
   ],
 
-  notes: "Optional notes.",
-}
+  notes: "Optional notes."
+};
 /*
    TAG group suggestions
 
