@@ -39,4 +39,45 @@
           <button id="servings-increase" type="button" aria-label="Increase servings">+</button>
         </div>
 
-        <div class="unit-contr
+        <div class="unit-control">
+          <span class="control-label">Units</span>
+          <button id="unit-us" type="button" class="active">US</button>
+          <button id="unit-metric" type="button">Metric</button>
+        </div>
+      </section>
+
+      <div class="recipe-columns">
+        <section class="ingredients-section">
+          <h2>Ingredients</h2>
+
+          <!-- app.js may expect either of these containers -->
+          <ul id="recipe-ingredients">
+            <span id="ingredients-list"></span>
+          </ul>
+        </section>
+
+        <section class="steps-section">
+          <h2>Instructions</h2>
+
+          <!-- app.js may expect either of these containers -->
+          <ol id="recipe-steps">
+            <span id="steps-list"></span>
+          </ol>
+        </section>
+      </div>
+
+      <section id="recipe-notes-section" class="notes-section">
+        <h2>Notes</h2>
+        <p id="recipe-notes"></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html">Recipe Collection</a>
+  </footer>
+
+  <script src="registry.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
