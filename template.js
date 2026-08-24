@@ -13,7 +13,7 @@ window.RECIPES["replace-with-recipe-id"] = {
   title: "Recipe title",
   description: "Brief description.",
   baseServings: 4,
-  source: "name or url",
+  source: "name or url etc",
 
   // Choose any or create your own. Can be empty, one or a list.
   cuisine: ["italian"],
@@ -22,12 +22,12 @@ window.RECIPES["replace-with-recipe-id"] = {
 
   // Tags can be simple tags or group tags
   tags: [
-    ""generic-ta"",
-    ""group:tag-value",
-    ""harveysfavorite",
-    ""recipe-to-try",
-    ""equipment:instantpot",
-     "dietary:vegan",
+    "generic-tag",
+    "group:tag-value",
+    "harveysfavorite",
+    "recipe-to-try",
+    "equipment:instantpot",
+    "dietary:vegan",
   ],
 
   ingredients: [
@@ -35,25 +35,28 @@ window.RECIPES["replace-with-recipe-id"] = {
       name: "Ingredient name and preparation",
       us: { amt: 1, unit: "cup" },
       metric: { amt: 240, unit: "ml" },
-    }
+    },
     {      name: "Yellow onion, finely diced",
       us: { amt: 1, unit: "medium" },
       metric: { amt: 1, unit: "medium" },
     }
-  ]
+  ],
 
-  step: [    {      title: "Step title",
+  steps: [    
+    {      
+      title: "Step title",
       content: "Write the instruction.",
-    ,
-    {      title: "Sauté the onion",
+    },
+    { 
+      title: "Sauté the onion",
       content: "Warm the oil in a large pot over medium heat. Add the onion and cook, stirring occasionally, until softened and lightly golden, about 5 minutes.",
-    ,
-  ,
+    },
+  ],
 
   notes: "Optional notes.",
 
 /*
-   TAPgroup suggestionsS
+   TAG group suggestions
 
   type: ["appetizer", "main", "side", "dessert", "soup"]
   occasion: ["weeknight", "winter", "holiday", "thanksgiving", "potluck"]
