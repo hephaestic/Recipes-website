@@ -21,55 +21,73 @@
       <a href="index.html">← Back to all recipes</a>
     </p>
 
-    <article id="recipe-detail" class="recipe-detail">
-      <p id="recipe-status" class="recipe-status">Loading recipe...</p>
+    <p id="recipe-loading" class="recipe-status">Loading recipe...</p>
 
+    <section id="recipe-missing" class="empty-state" hidden>
+      <h1>Recipe unavailable</h1>
+      <p id="recipe-missing-message"></p>
+      <p><a href="index.html">← Back to all recipes</a></p>
+    </section>
+
+    <article id="recipe-detail" class="recipe-detail" hidden>
       <header class="recipe-header">
-        <p id="recipe-tag" class="recipe-tag"></p>
         <p id="recipe-meta" class="recipe-meta"></p>
         <h1 id="recipe-title"></h1>
         <p id="recipe-description" class="recipe-description"></p>
+        <div id="recipe-tags" class="tag-list" aria-label="Recipe tags"></div>
       </header>
 
       <section class="recipe-controls" aria-label="Recipe controls">
         <div class="servings-control">
           <span class="control-label">Servings</span>
-          <button id="servings-decrease" type="button" aria-label="Decrease servings">−</button>
-          <span id="servings-count">0</span>
-          <button id="servings-increase" type="button" aria-label="Increase servings">+</button>
+          <button
+            id="servings-decrease"
+            type="button"
+            aria-label="Decrease servings"
+          >−</button>
+          <span id="servings-count">1 serving</span>
+          <button
+            id="servings-increase"
+            type="button"
+            aria-label="Increase servings"
+          >+</button>
         </div>
 
         <div class="unit-control">
           <span class="control-label">Units</span>
-          <button id="unit-us" type="button" class="active">US</button>
-          <button id="unit-metric" type="button">Metric</button>
+          <button
+            id="units-us"
+            type="button"
+            data-unit="us"
+            aria-pressed="true"
+          >US</button>
+          <button
+            id="units-metric"
+            type="button"
+            data-unit="metric"
+            aria-pressed="false"
+          >Metric</button>
         </div>
       </section>
 
       <div class="recipe-columns">
         <section class="ingredients-section">
           <h2>Ingredients</h2>
-
-          <!-- app.js may expect either of these containers -->
-          <ul id="recipe-ingredients">
-            <span id="ingredients-list"></span>
-          </ul>
+          <ul id="ingredient-list"></ul>
         </section>
 
         <section class="steps-section">
           <h2>Instructions</h2>
-
-          <!-- app.js may expect either of these containers -->
-          <ol id="recipe-steps">
-            <span id="steps-list"></span>
-          </ol>
+          <ol id="step-list"></ol>
         </section>
       </div>
 
-      <section id="recipe-notes-section" class="notes-section">
+      <section id="recipe-notes" class="notes-section" hidden>
         <h2>Notes</h2>
-        <p id="recipe-notes"></p>
+        <p id="recipe-notes-text"></p>
       </section>
+
+      <p id="recipe-source" class="recipe-source" hidden></p>
     </article>
   </main>
 
