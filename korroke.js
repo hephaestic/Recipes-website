@@ -1,7 +1,7 @@
 window.RECIPES = window.RECIPES || [];
 
 window.RECIPES.push({
-  id: "kabocha-okara-korroke",
+  id: "korroke",
   tag: "Japan · Okara · Serves 4",
   collection: "okara",
   title: "Kabocha Okara Korokke",
