@@ -1,6 +1,6 @@
 window.RECIPES = window.RECIPES || [];
 
-window.RECIPES.push({
+window.RECIPES["seaweed-soup"] = {
   id: "seaweed-soup",
   tag: "Soup · Serves 6–8",
   collection: "40days",
