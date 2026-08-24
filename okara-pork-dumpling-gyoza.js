@@ -1,7 +1,7 @@
 window.RECIPES = window.RECIPES || [];
 
 window.RECIPES.push({
-  id: "gyoza",
+  id: "okara-pork-dumpling-gyoza",
   tag: "Fusion · Okara · Serves 4",
   collection: "okara",
   title: "Okara Pork Dumplings (Gyoza)",
