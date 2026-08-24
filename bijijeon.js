@@ -1,7 +1,7 @@
 window.RECIPES = window.RECIPES || {};
 
-window.RECIPES["biji-jeon"] = {
-  id: "biji-jeon",
+window.RECIPES["bijijeon"] = {
+  id: "bijijeon",
 
   title: "Biji Jeon",
   description:
